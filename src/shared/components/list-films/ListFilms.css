@@ -81,7 +81,18 @@
   right: 0;
 }
 
+.price-tag {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.price {
+  color: red;
+}
+
 @media (max-width: 760px) {
+
   .move-left,
   .move-right {
     opacity: 1;

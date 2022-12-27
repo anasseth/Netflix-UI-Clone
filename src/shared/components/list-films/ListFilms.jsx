@@ -46,15 +46,9 @@ const ListFilms = ({ title, itens }) => {
                   src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}
                   alt={item.original_title ?? index}
                 />
-                <p
-                  style={{
-                    color: "white",
-                    fontSize: "12px",
-                    textAlign: "center",
-                  }}
-                >
-                  Watch for only 
-                  <b style={{ color: "red" }}> $30</b>
+                <p className="price-tag">
+                  Watch for only
+                  <b className="price"> ${item.price ? item.price : 10}.00</b>
                 </p>
               </div>
             ))}
